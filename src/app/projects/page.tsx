@@ -57,7 +57,7 @@ const Project = () => {
                   <h2 className={styles["project-subtitle"]}>Stay Organized and Productive</h2>
                   <h1 className={styles["project-heading"]}>Todo list App</h1>
                   <p className={styles["project-text"]}>
-                  The To-Do List App helps you manage tasks efficiently by allowing you to create, organize, and prioritize your to-do items. Whether it's work, study, or personal tasks, this app lets you keep track of everything in one place. With simple features like task creation, editing, and deletion, you can stay on top of your daily responsibilities and boost your productivity.
+                  The To-Do List App helps you manage tasks efficiently by allowing you to create, organize, and prioritize your to-do items. Whether it&#39;s work, study, or personal tasks, this app lets you keep track of everything in one place. With simple features like task creation, editing, and deletion, you can stay on top of your daily responsibilities and boost your productivity.
                   </p>
                   <Link href={'https://todo-app-abdul-rafays-projects-87eac4f7.vercel.app/'} target='_blank'>
                     <p className={styles["project-link"]}>View Project</p>

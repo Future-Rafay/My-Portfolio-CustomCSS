@@ -35,7 +35,7 @@ const Contact = () => {
       <form className={styles["form-container"]} onSubmit={onSubmit}>
         <h2 className={styles["form-heading"]}>Let&apos;s Connect!</h2>
         <p className={styles["form-description"]}>
-          "Have questions, project ideas, or collaboration in mind? I’m here to help! Reach out using the form below, and I'll get back to you as soon as possible. Together, we can bring your vision to life with solutions tailored to your needs. Let’s make something amazing!"
+        &#34;Have questions, project ideas, or collaboration in mind? I’m here to help! Reach out using the form below, and I&#39;ll get back to you as soon as possible. Together, we can bring your vision to life with solutions tailored to your needs. Let’s make something amazing!&#34;
         </p>
 
         <div className={styles["form-inputs"]}>

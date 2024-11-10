@@ -1,28 +1,10 @@
 "use client";
 import React from "react";
-import { IoLogoInstagram } from "react-icons/io5";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import Photo from "./MyPhoto";
 import styles from "../styles/HeroSection.module.css"; // Correct import for CSS Modules
 
 const HeroSection = () => {
-  const socialLinks = [
-    {
-      icon: <IoLogoInstagram size={20} />,
-      url: "https://www.instagram.com/abdul.rehman_arain/",
-    },
-    {
-      icon: <FaLinkedinIn size={20} />,
-      url: "https://www.linkedin.com/in/abdul-rehman-b4ab90329",
-    },
-    {
-      icon: <FaGithub size={20} />,
-      url: "https://github.com/A-Rehman-arain",
-    },
-  ];
-
   return (
     <div className={styles.heroContainer}>
       <div className={styles.heroContent}>
