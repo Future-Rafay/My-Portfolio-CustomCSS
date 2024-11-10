@@ -1,0 +1,105 @@
+.aboutContainer {
+    width: 100%;
+    z-index: 30;
+    position: relative;
+  }
+  
+  .quote {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    padding: 1rem 0;
+    display: none;
+    color: #F28A30;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  .biographySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+  
+  .biographyTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #F28A30;
+  }
+  
+  .biographyText {
+    font-size: 1rem;
+    line-height: 1.625;
+    margin-bottom: 0.5rem;
+    color: #5B4037;
+  }
+  
+  .highlight {
+    font-weight: 600;
+    color:#5B4037 ;
+    text-transform: uppercase;
+  }
+  
+  .imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    border: 2px solid #F28A30 ;
+    border-right-width: 15px;
+    border-bottom-width: 30px;
+    border-right-color: #FFB570 ;
+    border-bottom-color: #FFB570 ;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .profileImage {
+    border-radius: 1rem;
+    height: 300px;
+    width: 400px;
+  }
+  
+  @media (min-width: 850px) {
+    .quote {
+      display: block;
+    }
+  
+    .contentWrapper {
+      flex-direction: row;
+      padding: 0 4rem;
+    }
+  
+    .biographySection {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  
+    .imageSection {
+      width: 50%;
+    }
+  
+    .imageContainer {
+      padding: 2rem;
+    }
+  
+    .profileImage {
+      height: 400px;
+    }
+  }

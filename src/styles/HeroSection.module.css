@@ -1,0 +1,111 @@
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.heroContent {
+    text-align: center;
+}
+
+.heroTitle {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+
+.heroName {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.heroHighlight {
+    color:#5B4037;
+    font-weight: 700;
+}
+
+.heroDescription {
+    max-width: 600px;
+    font-weight: 600;
+    padding: 1rem 0;
+    color: #5B4037;
+}
+
+.ctaContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.hireButton {
+    background-color: #F28A30;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: #5B4037;
+    transition: all 0.3s ease;
+    margin-bottom: 5rem;
+}
+
+.hireButton:hover {
+    background-color:  #F28A30;
+    border-color: #5B4037;
+    color: #5B4037;
+}
+
+.photoContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media (min-width: 850px) {
+    .heroContainer {
+        flex-direction: row;
+        padding: 4rem 2rem 0 2rem;
+    }
+
+    .heroContent {
+        width: 50%;
+        text-align: left;
+    }
+
+    .heroName {
+        font-size: 68px;
+    }
+
+    .ctaContainer {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .buttonContainer {
+        justify-content: flex-start;
+    }
+
+    .socialContainer {
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+
+    .photoContainer {
+        width: 50%;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+}
+

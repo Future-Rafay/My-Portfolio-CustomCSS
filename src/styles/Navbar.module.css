@@ -1,0 +1,229 @@
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #FFF8F0;
+}
+
+.headerMainDiv {
+  height: 80px;
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D3C5B5;
+}
+
+.headerTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #5B4037;
+}
+
+@media (min-width: 850px) {
+  .headerTitle {
+      font-size: 36px;
+  }
+}
+
+.headerTitleSpan {
+  color: #FFB570;  
+}
+
+.navMain {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .navMain {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+  }
+}
+
+.navUl {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.navLi {
+  cursor: pointer;
+  position: relative;
+  
+}
+
+.navLink {
+  position: relative;
+  display: inline-block;
+  color: #5B4037;
+  text-decoration: none;
+}
+
+.pathnameHref {
+  border-bottom: 2px solid #FFB570;
+  color: #5B4037;
+}
+
+.linkName {
+  position: relative;
+  z-index: 10;
+  transition: color 0.3s ease;
+}
+
+.linkNameHover,
+.linkNameGroupHover {
+  color: #FFB570;
+}
+
+.linkUnderline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFF8F0;
+  transition: all 0.3s ease;
+}
+
+.groupHover :hover .linkUnderline {
+  width: 100%;
+}
+
+.hireMeButton {
+  background-color: #F28A30;
+  padding: 16px 32px;
+  border: 1px solid #2dd4bf;
+  display: none;
+  transition: all 0.3s ease;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: white;
+}
+
+.hireMeButtonHover {
+  background-color: white;
+  border-color: #2dd4bf;
+  color: black;
+  opacity: 0.9;
+}
+
+@media (min-width: 850px) {
+  .hireMeButton {
+      display: block;
+  }
+}
+
+@media (min-width: 850px) {
+  .hamburgerMain {
+      display: none;
+  }
+}
+
+.hamburgerIcon {
+  color: #2dd4bf;
+}
+
+.mobileMainDiv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  transition: opacity 0.3s ease;
+}
+
+.sideBarOpens {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sideBarClose {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.toggleSidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mobileNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 256px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.mobileNavOpens {
+  transform: translateX(0);
+}
+
+.mobileNavClose {
+  transform: translateX(100%);
+}
+
+.crossIconMainDiv {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.crossIconSecondDiv {
+  padding: 16px;
+}
+
+.crossIcon {
+  color: #2dd4bf;
+}
+
+.mobileNavUl {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: -20px;
+}
+
+.mobileNavLi {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mobileNavLiLastChild {
+  border-bottom: none;
+}
+
+.mobileNavLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.mobileNavLinksHover {
+  background-color: #f3f4f6;
+}
+
+.mobileNavItems {
+  font-weight: 600;
+}

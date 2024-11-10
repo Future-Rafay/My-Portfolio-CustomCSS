@@ -1,5 +1,21 @@
-export default function Home() {
+"use client";
+import React, { useEffect, useState } from "react";
+import HeroSection from "../components/HeroSection";
+import styles from "./page.module.css";
+
+const HomePage = () => {
+ 
   return (
-   <div>Home</div>
+    <section className={styles.homeSection}>
+    <div className={styles.homeContainer}>
+        <div>
+          <div className={styles.heroSectionContainer}>
+            <HeroSection />
+          </div>
+        </div>
+    </div>
+  </section>
   );
-}
+};
+
+export default HomePage;

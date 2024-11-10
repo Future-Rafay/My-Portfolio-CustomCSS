@@ -1,0 +1,137 @@
+#project {
+    background-color: #FFF8F0;
+  }
+  
+  .project-divider {
+    border-color: #FFB570 ;
+    border-width: 2px;
+  }
+
+  .project-section {
+    color: #5B4037; /* text-gray-600 */
+  }
+  
+  .project-container {
+    padding: 1.25rem; /* px-5 */
+    padding-top: 4rem; /* py-16 */
+    padding-bottom: 4rem; /* py-16 */
+    margin: auto;
+  }
+  
+  /* Project title and description */
+  .project-title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5rem; /* mb-20 */
+  }
+  
+  .project-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 800;
+    color: #FFB570; /* text-gray-900 */
+  }
+  
+  @media (min-width: 640px) {
+    .project-title {
+      font-size: 1.875rem; /* sm:text-3xl */
+    }
+  }
+  
+  .project-description {
+    width: 100%;
+    margin: auto;
+    line-height: 1.5;
+    color: #5B4037;
+  }
+  
+  @media (min-width: 1024px) {
+    .project-description {
+      width: 66.67%; /* lg:w-2/3 */
+    }
+  }
+  
+  /* Flex grid for the cards */
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Gap between cards */
+  }
+  
+  .project-card {
+    flex: 1 1 100%; /* Default full width */
+    max-width: 100%;
+    padding: 1rem; /* p-4 */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  @media (min-width: 640px) {
+    .project-card {
+      flex: 1 1 48%; /* Half width on small screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .project-card {
+      flex: 1 1 32%; /* Third width on large screens */
+    }
+  }
+  
+  .project-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 4px solid #FFB570 ; /* Light border */
+    background-color: #FFF8F0;
+    padding: 2rem; /* Padding inside each card */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+    /* Primary: #F28A30 (Warm Orange) Secondary: #FFB570 (Soft Peach) Background: #FFF8F0 (Ivory) Text: #5B4037 (Warm Brown). */
+  .project-card-inner:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .project-content {
+    text-align: left;
+  }
+  
+  .project-subtitle {
+    color: #FFB570 ; /* text-indigo-500 */
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-heading {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 500;
+    color: #F28A30; /* text-gray-900 */
+    margin-bottom: 0.75rem; /* mb-3 */
+  }
+  
+  .project-text {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-link {
+    color: #FFB570; /* text-indigo-500 */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
